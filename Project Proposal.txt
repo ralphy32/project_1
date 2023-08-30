@@ -2,14 +2,21 @@ Proposal Thoughts
 ---------------------------
 Project Idea  - To analyse the correlation of different health and societal 
 makeup measurements across the world's largest countries with average lifespan 
-to see which have the strongest impact.
+to see which have the strongest impact. We plan to determine if there is a
+significant difference across the 10 largest nations between mortality rates of
+males and females. We plan to also determine and plot corolation between
+mortality rates and national obesity, pysicians per 1000 people, and national
+population size. We hypothisize that females have a lower mortality rate than males,
+that obesity is strongly corrolated with mortality rate, that pysicians per citizens
+is strongly negtively corrolated with mortality rate, and that larger nations have
+higher mortality rates.
 
 Some specific potential measurements include:
-  Sex, Obesity, Malnourishment, and National Population
+  Sex, Obesity, Physician Availability, and National Population
 
 Team members and their roles
-  Caleb Wolf -
-  Kyle Burks-
+  Caleb Wolf -Data Wrangler/Coder
+  Kyle Burks-GitHub Admin/Coder
   Chavell Scott-
   Simone Allen-
 
