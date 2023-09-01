@@ -1,6 +1,6 @@
-Proposal Thoughts
+Project Proposal
 ---------------------------
-Project Idea - To analyze the correlation of different health and societal 
+To analyze the correlation of different health and societal 
 makeup measurements across the world's largest countries with mortality rates 
 to see which has the strongest impact. We plan to determine if there is a
 significant difference across the 10 largest nations between mortality rates of
@@ -12,7 +12,7 @@ is strongly negatively correlated with mortality rate, and that larger nations h
 higher mortality rates.
 
 
-Some specific potential measurements include:
+Specific measurements include (but aren't limited to):
   Sex, Obesity, Physician Availability, and National Population
 
 Team members and their roles
