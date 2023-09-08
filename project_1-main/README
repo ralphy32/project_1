@@ -1,0 +1,12 @@
+Project 1
+----------------------------
+Raw data from:
+https://www.kaggle.com/datasets/theworldbank/health-nutrition-and-population-statistics
+
+----------------------------
+Method of combining dataframes taken from:
+    https://www.kdnuggets.com/2022/08/3-ways-append-rows-pandas-dataframes.html
+Code location:
+    # Combine cleaned_data_df and total_avg_mort_df ?
+    cleaned_data_df = cleaned_data_df.append(total_avg_mort_df,ignore_index=True)
+    cleaned_data_df.head(1)
