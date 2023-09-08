@@ -5,8 +5,30 @@ https://www.kaggle.com/datasets/theworldbank/health-nutrition-and-population-sta
 
 ----------------------------
 Method of combining dataframes taken from:
-    https://www.kdnuggets.com/2022/08/3-ways-append-rows-pandas-dataframes.html
+    Ben Alford, Professor
+
 Code location:
-    # Combine cleaned_data_df and total_avg_mort_df ?
-    cleaned_data_df = cleaned_data_df.append(total_avg_mort_df,ignore_index=True)
-    cleaned_data_df.head(1)
+    # Combine cleaned_data_df and total_avg_mort_df
+    cleaned_data_df = pd.concat([total_avg_mort_df,cleaned_data_df],ignore_index=True)
+
+----------------------------
+Method for making grouped bar charts:
+    https://www.geeksforgeeks.org/plotting-multiple-bar-charts-using-matplotlib-in-python/
+
+Code location:
+    # Plot bar graph of overweight % by sex by country
+    x_values = sorted_overweight_df["Country"]
+    y1_values = sorted_overweight_df["Prevalence of overweight, male (% of male adults)"]
+    y2_values = sorted_overweight_df["Prevalence of overweight, female (% of female adults)"]
+ 
+    X_axis = np.arange(len(x_values))
+ 
+    plt.bar(X_axis - 0.2, y1_values, 0.4, label = 'Male')
+    plt.bar(X_axis + 0.2, y2_values, 0.4, label = 'Female', color="r")
+
+----------------------------   
+Method for moving x-ticks in bar charts:
+    https://matplotlib.org/stable/gallery/text_labels_and_annotations/demo_text_rotation_mode.html
+
+Code location:
+    plt.xticks(X_axis, x_values,rotation=45, ha="right", va="top")
