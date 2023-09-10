@@ -1,9 +1,11 @@
 Project 1
 ----------------------------
+
 Raw data from:
 https://www.kaggle.com/datasets/theworldbank/health-nutrition-and-population-statistics
 
 ----------------------------
+
 Method of combining dataframes taken from:
     Ben Alford, Professor
 
@@ -12,6 +14,7 @@ Code location:
     cleaned_data_df = pd.concat([total_avg_mort_df,cleaned_data_df],ignore_index=True)
 
 ----------------------------
+
 Method for making grouped bar charts:
     https://www.geeksforgeeks.org/plotting-multiple-bar-charts-using-matplotlib-in-python/
 
@@ -26,9 +29,17 @@ Code location:
     plt.bar(X_axis - 0.2, y1_values, 0.4, label = 'Male')
     plt.bar(X_axis + 0.2, y2_values, 0.4, label = 'Female', color="r")
 
-----------------------------   
+----------------------------  
+
 Method for moving x-ticks in bar charts:
     https://matplotlib.org/stable/gallery/text_labels_and_annotations/demo_text_rotation_mode.html
 
 Code location:
     plt.xticks(X_axis, x_values,rotation=45, ha="right", va="top")
+
+----------------------------   
+Method for saving figures without cutting off the bottom labels:
+    https://ecoagi.ai/topics/Matplotlib/matplotlib-savefig-cuts-off-labels
+
+Code location (like this for each plot):
+    plt.savefig("output_figs/Overweight_%_by_Sex_by_Country.png", bbox_inches="tight")
