@@ -1,0 +1,26 @@
+Project Proposal
+---------------------------
+To analyze the correlation of different health and societal 
+makeup measurements across the world's largest countries with mortality rates 
+to see which has the strongest impact. We plan to determine if there is a
+significant difference across the 10 largest nations between mortality rates of
+males and females. We plan to also determine and plot correlation between
+mortality rates and national obesity, physicians per 1000 people, and national
+population size. We hypothesize that females have a lower mortality rate than males,
+that obesity is strongly correlated with mortality rate, that physicians per citizens
+is strongly negatively correlated with mortality rate, and that larger nations have
+higher mortality rates.
+
+
+Specific measurements include (but aren't limited to):
+  Sex, Obesity, Physician Availability, and National Population
+
+Team members and their roles
+  Caleb Wolf - Data Wrangler/Coder
+  Kyle Burks - GitHub Admin/Coder
+  Chavell Scott - Coder
+  Simone Allen - Coder
+
+Potential data sources
+  Kaggle
+  https://www.kaggle.com/datasets/theworldbank/health-nutrition-and-population-statistics
