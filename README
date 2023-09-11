@@ -54,6 +54,13 @@ Code location:
 
 ----------------------------
 
+Aggrigation method of adding statistics:
+    Tutor Simon Rennocks helped with this
+
+Code location (like this for each section):
+    sorted_gender_df.agg({"Average Mortality Rate (Per 1,000 Adults)":["mean","median","var","std","sem"]})
+----------------------------
+
 Method for making grouped bar charts:
     https://www.geeksforgeeks.org/plotting-multiple-bar-charts-using-matplotlib-in-python/
 
