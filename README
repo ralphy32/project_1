@@ -1,5 +1,44 @@
 Project 1
 ----------------------------
+Proposal:
+----------------------------
+
+- To analyze the relationship of different health and societal 
+factors across the world's largest countries with mortality rates 
+to see which has the strongest potential impact. 
+
+- We plan to determine if there is a
+significant difference across the 10 largest nations between mortality rates of
+males and females. We plan to also determine and plot correlation between
+mortality rates and national obesity, physicians per 1000 people, and national
+population size. 
+
+----------------------------
+Hypotheses:
+----------------------------
+
+- We hypothesize that females have a lower mortality rate than males,
+that obesity is strongly correlated with mortality rate, that physicians per citizens
+is strongly negatively correlated with mortality rate, and that larger nations have
+higher mortality rates.
+
+----------------------------
+Findings:
+----------------------------
+
+Females have a lower mortality rate than males
+Finding - True
+
+Obesity is strongly correlated with mortality rate
+Finding - False
+
+Physicians per 1,000 citizens is strongly negatively correlated with mortality rate
+Finding - False
+
+Larger nations have higher mortality rates.
+Finding - False
+
+----------------------------
 
 Raw data from:
 https://www.kaggle.com/datasets/theworldbank/health-nutrition-and-population-statistics
