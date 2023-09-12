@@ -1,9 +1,50 @@
 Project 1
 ----------------------------
+Proposal:
+----------------------------
+
+- To analyze the relationship of different health and societal 
+factors across the world's largest countries with mortality rates 
+to see which has the strongest potential impact. 
+
+- We plan to determine if there is a
+significant difference across the 10 largest nations between mortality rates of
+males and females. We plan to also determine and plot correlation between
+mortality rates and national obesity, physicians per 1000 people, and national
+population size. 
+
+----------------------------
+Hypotheses:
+----------------------------
+
+- We hypothesize that females have a lower mortality rate than males,
+that obesity is strongly correlated with mortality rate, that physicians per citizens
+is strongly negatively correlated with mortality rate, and that larger nations have
+higher mortality rates.
+
+----------------------------
+Findings:
+----------------------------
+
+Females have a lower mortality rate than males
+Finding - True
+
+Obesity is strongly correlated with mortality rate
+Finding - False
+
+Physicians per 1,000 citizens is strongly negatively correlated with mortality rate
+Finding - False
+
+Larger nations have higher mortality rates.
+Finding - False
+
+----------------------------
+
 Raw data from:
 https://www.kaggle.com/datasets/theworldbank/health-nutrition-and-population-statistics
 
 ----------------------------
+
 Method of combining dataframes taken from:
     Ben Alford, Professor
 
@@ -12,6 +53,14 @@ Code location:
     cleaned_data_df = pd.concat([total_avg_mort_df,cleaned_data_df],ignore_index=True)
 
 ----------------------------
+
+Aggrigation method of adding statistics:
+    Tutor Simon Rennocks helped with this
+
+Code location (like this for each section):
+    sorted_gender_df.agg({"Average Mortality Rate (Per 1,000 Adults)":["mean","median","var","std","sem"]})
+----------------------------
+
 Method for making grouped bar charts:
     https://www.geeksforgeeks.org/plotting-multiple-bar-charts-using-matplotlib-in-python/
 
@@ -26,9 +75,17 @@ Code location:
     plt.bar(X_axis - 0.2, y1_values, 0.4, label = 'Male')
     plt.bar(X_axis + 0.2, y2_values, 0.4, label = 'Female', color="r")
 
-----------------------------   
+----------------------------  
+
 Method for moving x-ticks in bar charts:
     https://matplotlib.org/stable/gallery/text_labels_and_annotations/demo_text_rotation_mode.html
 
 Code location:
     plt.xticks(X_axis, x_values,rotation=45, ha="right", va="top")
+
+----------------------------   
+Method for saving figures without cutting off the bottom labels:
+    https://ecoagi.ai/topics/Matplotlib/matplotlib-savefig-cuts-off-labels
+
+Code location (like this for each plot):
+    plt.savefig("output_figs/Overweight_%_by_Sex_by_Country.png", bbox_inches="tight")
